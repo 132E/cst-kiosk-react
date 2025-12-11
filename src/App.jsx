@@ -1,11 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Home from './pages/Home'
+import {Routes, Route} from 'react-router-dom'
+import MainLayout from './layouts/MainLayout';
+import Home from './pages/Home.jsx';
+
+
+
+
 
 function App() {
-  return <Home />
+  return( <Routes>
+    <Route path='/' element={<MainLayout />}>
+      <Route index element={<Home />} />
+    </Route>
+  </Routes>)
 }
 
 export default App;
