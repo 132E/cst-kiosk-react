@@ -2,9 +2,9 @@ import { NavLink, Outlet } from "react-router-dom";
 
 function MainLayout() {
   return (
-    <div className="min-h-screen bg-slate-900 text-slate-100">
+    <div className="min-h-screen bg-sky-800 text-slate-100">
       {/* Top Nav */}
-      <header className="border-b border-slate-800 bg-slate-900/80 backdrop-blur">
+      <header className="border-b border-sky-800 bg-horizon-blue/80 backdrop-blur">
         <nav className="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
           <div className="font-semibold tracking-wide">
             CST Industrial Storage
