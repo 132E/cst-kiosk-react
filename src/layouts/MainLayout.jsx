@@ -7,11 +7,7 @@ function MainLayout() {
       <header className="border-b border-sky-800 bg-horizon-blue/80 backdrop-blur">
         <nav className="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
           <div className="font-semibold tracking-wide">
-            CST Industrial Storage
-          </div>
-
-          <div className="flex gap-4 text-sm">
-            <NavLink
+            <NavLink 
               to="/"
               end
               className={({ isActive }) =>
@@ -20,19 +16,22 @@ function MainLayout() {
                 }`
               }
             >
-              AQUASTORE
-            </NavLink>
+            CST Industrial Storage</NavLink>
+          </div>
 
+          <div className="flex gap-4 text-sm">
             <NavLink
-              to="/media"
+              to="/brochures"
+              end
               className={({ isActive }) =>
                 `hover:text-teal-300 ${
                   isActive ? "text-teal-300" : "text-slate-300"
                 }`
               }
             >
-              TECTANK
+              BROCHURES
             </NavLink>
+
 
             <NavLink
               to="/specs"
@@ -42,19 +41,31 @@ function MainLayout() {
                 }`
               }
             >
-              TECKTANK WF
+              SPECS
             </NavLink>
 
             <NavLink
-              to="/pdfs"
+              to="/images"
               className={({ isActive }) =>
                 `hover:text-teal-300 ${
                   isActive ? "text-teal-300" : "text-slate-300"
                 }`
               }
             >
-              OPTIDOME
+              IMAGES
             </NavLink>
+            
+            <NavLink
+              to="/media"
+              className={({ isActive }) =>
+                `hover:text-teal-300 ${
+                  isActive ? "text-teal-300" : "text-slate-300"
+                }`
+              }
+            >
+              MEDIA
+            </NavLink>
+
           </div>
         </nav>
       </header>
