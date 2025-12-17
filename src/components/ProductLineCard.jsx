@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 
 function ProductLineCard({ title, logo, image, href }) {
-    return (
-         <Link
+  return (
+    <Link
       to={href}
       className="group relative block overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/60 shadow-sm transition hover:border-slate-700 focus:outline-none focus:ring-2 focus:ring-teal-400"
       aria-label={`Open ${title}`}
-    >   
-    {/* Image */}
+    >
+      {/* Image */}
       <div className="relative h-40 w-full bg-slate-800">
         {image ? (
           <img
